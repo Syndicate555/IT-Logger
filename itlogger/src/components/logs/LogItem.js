@@ -8,6 +8,9 @@ export const LogItem = () => {
     setLoading(true);
     const res = await fetch("/logs");
     const data = await res.json();
+
+    setLogs(data);
+    setLoading(false);
   };
   return <div></div>;
 };
