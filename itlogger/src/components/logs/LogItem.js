@@ -22,8 +22,10 @@ export const LogItem = () => {
     return <h4>Loading.........</h4>;
   }
   return (
-    <ul>
-      <li></li>
+    <ul className="collection-with-header">
+      <li className="collection-header">
+        <h4 className="center">System Logs</h4>
+      </li>
     </ul>
   );
 };
