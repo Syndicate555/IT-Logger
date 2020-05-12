@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import SearchBar from "./components/layout/SearchBar";
 import "./App.css";
 import "materialize-css/dist/css/materialize.min.css";
@@ -8,7 +8,7 @@ const App = () => {
     // Init Materialize JS
     M.AutoInit();
   });
-  return <div className="App">My App</div>;
+  return <SearchBar />;
 };
 
 export default App;
