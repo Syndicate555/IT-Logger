@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-
-export const LogItem = () => {
+const LogItem = () => {
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -34,3 +33,5 @@ export const LogItem = () => {
     </ul>
   );
 };
+
+export default LogItem;
