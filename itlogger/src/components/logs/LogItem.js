@@ -25,8 +25,12 @@ export const LogItem = () => {
     <ul className="collection-with-header">
       <li className="collection-header">
         <h4 className="center">System Logs</h4>
-          </li>
-          {!loading && log.length === 0 ? (<p className = "center">No logs to show.....</p>)}
+      </li>
+      {!loading && log.length === 0 ? (
+        <p className="center">No logs to show.....</p>
+      ) : (
+        logs.map((log) => <li>{log.message}</li>)
+      )}
     </ul>
   );
 };
