@@ -12,5 +12,9 @@ export const LogItem = () => {
     setLogs(data);
     setLoading(false);
   };
+
+  if (loading) {
+    return <h4>Loading.........</h4>;
+  }
   return <div></div>;
 };
