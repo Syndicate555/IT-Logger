@@ -8,7 +8,11 @@ const App = () => {
     // Init Materialize JS
     M.AutoInit();
   });
-  return <SearchBar />;
+  return (
+    <Fragment>
+      <SearchBar />
+    </Fragment>
+  );
 };
 
 export default App;
