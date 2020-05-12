@@ -6,6 +6,7 @@ export const LogItem = () => {
 
   const getLogs = async () => {
     setLoading(true);
+    const res = await fetch("/logs");
   };
   return <div></div>;
 };
