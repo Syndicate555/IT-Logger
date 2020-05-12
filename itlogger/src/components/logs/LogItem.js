@@ -21,5 +21,9 @@ export const LogItem = () => {
   if (loading) {
     return <h4>Loading.........</h4>;
   }
-  return <div></div>;
+  return (
+    <ul>
+      <li></li>
+    </ul>
+  );
 };
