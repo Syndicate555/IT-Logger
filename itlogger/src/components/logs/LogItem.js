@@ -4,6 +4,11 @@ export const LogItem = () => {
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    getLogs();
+    //eslint-disable-next-line
+  }, []);
+
   const getLogs = async () => {
     setLoading(true);
     const res = await fetch("/logs");
