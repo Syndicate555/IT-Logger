@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const LogItem = (props) => {
+const LogItem = ({ log }) => {
   return <div></div>;
 };
 
-LogItem.propTypes = {};
+LogItem.propTypes = { log };
 
 export default LogItem;
