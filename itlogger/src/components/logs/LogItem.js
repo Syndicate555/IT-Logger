@@ -14,6 +14,7 @@ const LogItem = ({ log }) => {
         >
           {log.message}
         </a>
+        <br />
         <span className="grey-text"></span>
       </div>
     </li>
