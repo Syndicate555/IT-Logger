@@ -15,9 +15,9 @@ const App = () => {
     <Fragment>
       <SearchBar />
       <div className="container">
+        <AddBtn />
         <Logs />
       </div>
-      <AddBtn />
     </Fragment>
   );
 };
