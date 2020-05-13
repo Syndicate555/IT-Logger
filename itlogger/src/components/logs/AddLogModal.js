@@ -40,6 +40,16 @@ const AddLogModal = () => {
             </select>
           </div>
         </div>
+
+        <div className="row">
+          <div className="input-field">
+            <p>
+              <label>
+                <input type="text" />
+              </label>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
