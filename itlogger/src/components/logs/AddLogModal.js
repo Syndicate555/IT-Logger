@@ -1,4 +1,4 @@
-import React, { udeState } from "react";
+import React, { useState } from "react";
 
 const AddLogModal = () => {
   const [message, setMessage] = useState("");
