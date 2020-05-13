@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import AddLogModal from "../logs/AddLogModal";
 
 const TechListModal = () => {
   const [techs, setTechs] = useState([]);
@@ -26,4 +27,4 @@ const TechListModal = () => {
   );
 };
 
-export default Logs;
+export default TechListModal;
