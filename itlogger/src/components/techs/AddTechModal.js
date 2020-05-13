@@ -35,36 +35,15 @@ const AddTechModal = () => {
 
         <div className="row">
           <div className="input-field">
-            <select
-              name="tech"
-              value={tech}
-              className="browser-default"
-              onChange={(e) => setTech(e.target.value)}
-            >
-              <option value="" disabled>
-                Select Technician
-              </option>
-              <option value="John Doe">John Doe</option>
-              <option value="Sam Smith">Sam Smith</option>
-              <option value="Sara Wilson">Sara Wilson</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="input-field">
-            <p>
-              <label>
-                <input
-                  type="checkbox"
-                  className="filled-in"
-                  checked={attention}
-                  value={attention}
-                  onChange={(e) => setAttention(!attention)}
-                />
-                <span>Needs Attention</span>
-              </label>
-            </p>
+            <input
+              type="text"
+              name="firstName"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+            <label htmlFor="firstName" className="active">
+              Last Name
+            </label>
           </div>
         </div>
       </div>
