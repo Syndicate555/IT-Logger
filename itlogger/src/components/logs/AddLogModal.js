@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const AddLogModal = () => {
+  //states
   const [message, setMessage] = useState("");
   const [attention, setAttention] = useState(false);
   const [tech, setTech] = useState("");
