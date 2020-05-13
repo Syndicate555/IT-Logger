@@ -23,7 +23,16 @@ const TechListModal = () => {
     return <Preloader />;
   }
   return (
-    
+      <div id="tech-list-modal" className="modal">
+          <div className="modal-content">
+              <h4>Technician List</h4>
+              <ul className="collection">
+                  {!loading && techs.map(tech => (
+                      
+                  )}
+              </ul>
+          </div>
+    </div>
   );
 };
 
