@@ -18,16 +18,16 @@ const AddTechModal = () => {
   return (
     <div id="add-tech-modal" className="modal">
       <div className="modal-content">
-        <h4 style={{ fontFamily: "Jura" }}>Enter System Log</h4>
+        <h4 style={{ fontFamily: "Jura" }}>New Technician</h4>
         <div className="row">
           <div className="input-field">
             <input
               type="text"
-              message="message"
-              value={message}
+              name="firstName"
+              value={firstName}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <label htmlFor="message" className="active">
+            <label htmlFor="firstName" className="active">
               Log Message
             </label>
           </div>
