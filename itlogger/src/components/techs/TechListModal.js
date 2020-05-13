@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-const Logs = () => {
-  const [logs, setLogs] = useState([]);
+const TechListModal = () => {
+  const [techs, setTechs] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
