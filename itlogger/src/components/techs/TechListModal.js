@@ -23,7 +23,7 @@ const TechListModal = () => {
     <div id="tech-list-modal" className="modal">
       <div className="modal-content">
         <h4 style={{ fontFamily: "Jura", textAlign: "center" }}>
-          Technician List
+          Technician Available
         </h4>
         <ul className="collection">
           {!loading &&
