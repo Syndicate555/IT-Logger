@@ -7,7 +7,7 @@ const AddTechModal = () => {
   const [lastName, setLastName] = useState("");
   const onsubmit = () => {
     if (firstName === "" || lastName === "") {
-      M.toast({ html: "Please enter a message and tech" });
+      M.toast({ html: "Please enter the first and last name" });
     } else {
       console.log(message, tech, attention);
       // Clear Fields
