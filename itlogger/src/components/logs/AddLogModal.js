@@ -50,6 +50,7 @@ const AddLogModal = () => {
                   className="filled-in"
                   checked={attention}
                   value={attention}
+                  onChange={(e) => setAttention(!attention)}
                 />
               </label>
             </p>
