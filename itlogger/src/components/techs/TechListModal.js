@@ -25,7 +25,10 @@ const TechListModal = () => {
         <h4 style={{ fontFamily: "Jura", textAlign: "center" }}>
           Technician Available
         </h4>
-        <ul className="collection">name</ul>
+        <ul className="collection">
+          {!loading &&
+            techs.map((tech) => <TechItem tech={tech} key={tech.id} />)}
+        </ul>
       </div>
     </div>
   );
