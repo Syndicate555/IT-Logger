@@ -6,3 +6,5 @@ const AddLogModal = () => {
   const [tech, setTech] = useState("");
   return <div></div>;
 };
+
+export default AddLogModal;
