@@ -3,9 +3,8 @@ import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddTechModal = () => {
   //states
-  const [message, setMessage] = useState("");
-  const [attention, setAttention] = useState(false);
-  const [tech, setTech] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const onsubmit = () => {
     if (message === "" || tech === "") {
       M.toast({ html: "Please enter a message and tech" });
