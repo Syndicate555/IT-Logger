@@ -20,7 +20,7 @@ const Logs = () => {
   };
 
   if (loading) {
-    return <h4>Loading.........</h4>;
+    return <h4 style={{ fontFamily: "Open Sans" }}>Loading.........</h4>;
   }
   return (
     <ul className="collection with-header">
