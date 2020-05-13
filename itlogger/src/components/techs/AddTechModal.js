@@ -28,7 +28,7 @@ const AddTechModal = () => {
               onChange={(e) => setFirstName(e.target.value)}
             />
             <label htmlFor="firstName" className="active">
-              Log Message
+              First Name
             </label>
           </div>
         </div>
