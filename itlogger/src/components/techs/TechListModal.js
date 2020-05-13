@@ -5,13 +5,13 @@ const TechListModal = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    getLogs();
+    getTechs();
     //eslint-disable-next-line
   }, []);
 
-  const getLogs = async () => {
+  const getTechs = async () => {
     setLoading(true);
-    const res = await fetch("/logs");
+    const res = await fetch("/techs");
     const data = await res.json();
 
     setLogs(data);
