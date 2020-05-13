@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import LogItem from "./LogItem";
 const Logs = () => {
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(false);
