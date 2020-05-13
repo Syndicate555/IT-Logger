@@ -11,9 +11,8 @@ const AddTechModal = () => {
     } else {
       console.log(firstName, lastName);
       // Clear Fields
-      setMessage("");
-      setTech("");
-      setAttention(false);
+      setFirstName("");
+      setLastName("");
     }
   };
   return (
