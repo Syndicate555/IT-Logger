@@ -16,6 +16,7 @@ const App = () => {
       <div className="container">
         <Logs />
       </div>
+      <AddBtn />
     </Fragment>
   );
 };
