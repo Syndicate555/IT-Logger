@@ -21,7 +21,7 @@ const LogItem = ({ log }) => {
           <Moment format="MMMM Do YYYY, h:mm:ss a">{log.date}</Moment>
         </span>
         <a href="#!" className="secondary-content">
-          <i className="material-icons grey-text">Delete</i>
+          <i className="material-icons grey-text">delete</i>
         </a>
       </div>
     </li>
