@@ -65,7 +65,7 @@ const AddLogModal = () => {
         <a
           href="#!"
           onclick={onsubmit}
-          className="modal-close waves-effect waves-green btn-flat"
+          className="modal-close waves-effect waves-blue wave-light btn"
         >
           Enter
         </a>
