@@ -1,5 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export const TechItem = () => {
+const TechItem = (props) => {
   return <div></div>;
 };
+
+TechItem.propTypes = {};
+
+export default TechItem;
