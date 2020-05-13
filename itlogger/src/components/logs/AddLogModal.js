@@ -9,7 +9,16 @@ const AddLogModal = () => {
     <div id="add-log-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
         <h4 style={{ fontFamily: "Jura" }}>Enter System Log</h4>
-        <div className="row"></div>
+        <div className="row">
+          <div className="input-field">
+            <input
+              type="text"
+              message="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
