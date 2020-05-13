@@ -5,6 +5,6 @@ const LogItem = ({ log }) => {
   return <div></div>;
 };
 
-LogItem.propTypes = { log };
+LogItem.propTypes = { log: PropTypes.object.isRequired };
 
 export default LogItem;
