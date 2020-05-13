@@ -45,7 +45,12 @@ const AddLogModal = () => {
           <div className="input-field">
             <p>
               <label>
-                <input type="text" />
+                <input
+                  type="checkbox"
+                  className="filled-in"
+                  checked={attention}
+                  value={attention}
+                />
               </label>
             </p>
           </div>
