@@ -16,6 +16,7 @@ const App = () => {
       <SearchBar />
       <div className="container">
         <AddBtn />
+        <AddLogModal />
         <Logs />
       </div>
     </Fragment>
