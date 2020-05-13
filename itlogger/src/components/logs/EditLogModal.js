@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 
-const AddLogModal = () => {
+const EditLogModal = () => {
   //states
   const [message, setMessage] = useState("");
   const [attention, setAttention] = useState(false);
@@ -83,4 +83,4 @@ const modalStyle = {
   width: "75%",
   height: "75%",
 };
-export default AddLogModal;
+export default EditLogModal;
