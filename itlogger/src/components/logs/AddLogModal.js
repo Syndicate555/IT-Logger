@@ -8,7 +8,7 @@ const AddLogModal = () => {
   return (
     <div id="add-log-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
-        <h4>Enter System Log</h4>
+        <h4 style={{ fontFamily: "Jura" }}>Enter System Log</h4>
       </div>
     </div>
   );
