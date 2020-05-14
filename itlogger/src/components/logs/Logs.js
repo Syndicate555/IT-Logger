@@ -18,7 +18,12 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
   return (
     <ul className="collection with-header">
       <li className="collection-header">
-        <h4 className="center">System Logs</h4>
+        <h4
+          className="center"
+          style={{ fontFamily: "Jura", textAlign: "center" }}
+        >
+          System Logs
+        </h4>
       </li>
       {!loading && logs.length === 0 ? (
         <p className="center">No logs to show...</p>
