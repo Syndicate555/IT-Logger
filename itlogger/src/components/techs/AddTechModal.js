@@ -52,7 +52,7 @@ const AddTechModal = () => {
       <div className="modal-footer">
         <a
           href="#!"
-          onclick={onsubmit}
+          onClick={onsubmit}
           className="modal-close waves-effect blue wave-light btn"
         >
           Enter
