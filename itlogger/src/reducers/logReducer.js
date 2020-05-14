@@ -9,6 +9,11 @@ const initalState = {
 
 export default (state = initalState, action) => {
   switch (action.type) {
+    case SET_LOADING:
+      return {
+        ...state,
+        loading: true,
+      };
     default:
       return state;
   }
