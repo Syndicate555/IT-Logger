@@ -3,9 +3,8 @@ import LogItem from "./LogItem";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { getLogs } from "../../actions/logActions";
-// import styled from "styled-components";
 import Preloader from "../layout/Preloader";
-const Logs = ({ log: { logs, loading } }) => {
+const Logs = ({ log: { logs, loading }, getLogs }) => {
   useEffect(() => {
     getLogs();
     //eslint-disable-next-line
