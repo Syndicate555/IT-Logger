@@ -40,5 +40,7 @@ const Logs = () => {
     </ul>
   );
 };
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => ({
+  log: state.log,
+});
 export default connect()(Logs);
