@@ -43,4 +43,4 @@ const Logs = () => {
 const mapStateToProps = (state) => ({
   log: state.log,
 });
-export default connect()(Logs);
+export default connect(mapStateToProps)(Logs);
