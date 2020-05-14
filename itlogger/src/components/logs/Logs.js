@@ -41,4 +41,4 @@ const Logs = () => {
   );
 };
 
-export default Logs;
+export default connect()(Logs);
