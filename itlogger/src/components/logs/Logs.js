@@ -11,7 +11,7 @@ const Logs = ({ log: { logs, loading } }) => {
     //eslint-disable-next-line
   }, []);
 
-  if (loading) {
+  if (loading || logs === null) {
     return <Preloader />;
   }
   return (
