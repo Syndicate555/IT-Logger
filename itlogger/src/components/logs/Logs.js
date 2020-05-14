@@ -18,7 +18,6 @@ const Logs = ({ log: { logs, loading } }) => {
     <ul className="collection with-header">
       <li className="collection-header">
         <h4 className="center" style={{ fontFamily: "Jura" }}>
-          {" "}
           System Logs
         </h4>
       </li>
