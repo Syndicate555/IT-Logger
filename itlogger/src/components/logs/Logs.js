@@ -10,15 +10,6 @@ const Logs = ({ log: { logs, loading } }) => {
     //eslint-disable-next-line
   }, []);
 
-  const getLogs = async () => {
-    setLoading(true);
-    const res = await fetch("/logs");
-    const data = await res.json();
-
-    setLogs(data);
-    setLoading(false);
-  };
-
   if (loading) {
     return <Preloader />;
   }
