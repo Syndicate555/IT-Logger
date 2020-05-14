@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import LogItem from "./LogItem";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
