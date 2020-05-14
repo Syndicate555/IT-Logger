@@ -41,6 +41,8 @@ const Logs = ({ log: { logs, loading } }) => {
     </ul>
   );
 };
+
+Logs.propTypes = {};
 const mapStateToProps = (state) => ({
   log: state.log,
 });
