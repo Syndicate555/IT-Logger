@@ -31,15 +31,6 @@ export const getLogs = () => async (dispatch) => {
       payload: err.response.data,
     });
   }
-  setLoading();
-
-  const res = await fetch("/logs");
-  const data = await res.json();
-
-  dispatch({
-    type: GET_LOGS,
-    payload: data,
-  });
 };
 
 //set loading to true
