@@ -1,7 +1,7 @@
 import { GET_LOGS, SET_LOADING, LOGS_ERROR } from "../actions/types";
 
 const initalState = {
-  log: null,
+  logs: null,
   current: null,
   loading: false,
   error: null,
