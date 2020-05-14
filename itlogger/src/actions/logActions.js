@@ -13,7 +13,7 @@ import { GET_LOGS, SET_LOADING, LOGS_ERROR } from "./types";
 //   };
 // };
 
-export const getLogs = () => {
+export const getLogs = () => async (dispatch) => {
   return async (dispatch) => {
     setLoading();
 
