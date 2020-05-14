@@ -5,7 +5,7 @@ const initalState = {
   error: null,
 };
 
-export default (state.action) => {
+export default (state = initalState, action) => {
   switch (action.type) {
     default:
       return state;
