@@ -28,7 +28,12 @@ export const getLogs = () => async (dispatch) => {
         });
       };
     };
-  } catch (err) {}
+  } catch (err) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: err.response.data,
+    });
+  }
   setLoading();
 
   const res = await fetch("/logs");
