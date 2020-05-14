@@ -28,7 +28,7 @@ export const getLogs = () => async (dispatch) => {
         });
       };
     };
-  } catch (error) {}
+  } catch (err) {}
   setLoading();
 
   const res = await fetch("/logs");
