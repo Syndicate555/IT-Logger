@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LogItem from "./LogItem";
+import { connect } from "react-redux";
 // import styled from "styled-components";
 import Preloader from "../layout/Preloader";
 const Logs = () => {
