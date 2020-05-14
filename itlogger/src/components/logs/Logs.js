@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import LogItem from "./LogItem";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import { getLogs } from "../../actions/logActions";
 // import styled from "styled-components";
 import Preloader from "../layout/Preloader";
 const Logs = ({ log: { logs, loading } }) => {
@@ -36,4 +37,4 @@ Logs.propTypes = {
 const mapStateToProps = (state) => ({
   log: state.log,
 });
-export default connect(mapStateToProps)(Logs);
+export default connect(mapStateToProps, { getLogs })(Logs);
