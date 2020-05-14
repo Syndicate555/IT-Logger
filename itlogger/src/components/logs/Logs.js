@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import LogItem from "./LogItem";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 // import styled from "styled-components";
 import Preloader from "../layout/Preloader";
-const Logs = () => {
+const Logs = ({ log: { logs, loading } }) => {
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
