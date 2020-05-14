@@ -1,5 +1,6 @@
 import { GET_LOGS, SET_LOADING, LOGS_ERROR } from "../actions/types";
 
+//App Level State
 const initalState = {
   logs: null,
   current: null,
