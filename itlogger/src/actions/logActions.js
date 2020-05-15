@@ -33,6 +33,8 @@ export const getLogs = () => async (dispatch) => {
   }
 };
 
+//Add new Log
+
 //set loading to true
 export const setLoading = () => {
   return {
