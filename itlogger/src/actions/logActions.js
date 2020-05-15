@@ -98,7 +98,7 @@ export const setCurrent = (log) => {
 };
 
 //clear current log
-export const setCurrent = (log) => {
+export const clearCurrent = () => {
   return {
     type: SET_CURRENT,
     payload: log,
