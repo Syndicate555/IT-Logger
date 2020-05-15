@@ -16,6 +16,8 @@ export default (state = initalState, action) => {
         logs: action.payload,
         loading: false,
       };
+    case ADD_LOG:
+
     case SET_LOADING:
       return {
         ...state,
