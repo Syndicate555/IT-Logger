@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { deleteLog } from "../../actions/logActions";
 
-const LogItem = ({ log }) => {
+const LogItem = ({ log, deleteLog }) => {
   return (
     <li className="collection-item">
       <div>
