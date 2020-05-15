@@ -8,6 +8,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 const LogItem = ({ log, deleteLog }) => {
   const onDelete = () => {
     deleteLog(log.id);
+    M.toast({ html: "Log Deleted" });
   };
   return (
     <li className="collection-item">
