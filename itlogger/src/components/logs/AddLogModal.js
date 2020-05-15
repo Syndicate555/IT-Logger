@@ -98,7 +98,7 @@ const AddLogModal = ({ addLog }) => {
   );
 };
 
-AddLogModal.PropTypes = {
+AddLogModal.propTypes = {
   addLog: PropTypes.func.isRequired,
 };
 
