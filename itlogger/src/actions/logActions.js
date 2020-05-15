@@ -48,7 +48,7 @@ export const addLogs = (log) => async (dispatch) => {
     const data = await res.json();
 
     dispatch({
-      type: GET_LOGS,
+      type: ADD_LOG,
       payload: data,
     });
   } catch (err) {
