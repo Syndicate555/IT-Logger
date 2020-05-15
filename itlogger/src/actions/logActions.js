@@ -61,7 +61,7 @@ export const addLog = (log) => async (dispatch) => {
 
 //Delete log from server
 
-export const deleteLogs = () => async (dispatch) => {
+export const deleteLog = () => async (dispatch) => {
   try {
     setLoading();
 
