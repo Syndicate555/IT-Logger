@@ -6,7 +6,7 @@ import { deleteLog } from "../../actions/logActions";
 
 const LogItem = ({ log, deleteLog }) => {
   const onDelete = () => {
-    deleteLog();
+    deleteLog(log.id);
   };
   return (
     <li className="collection-item">
