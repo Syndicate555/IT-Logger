@@ -35,4 +35,4 @@ LogItem.propTypes = {
   deleteLog: PropTypes.func.isRequired,
 };
 
-export default LogItem;
+export default connect(null, { deleteLog })(LogItem);
