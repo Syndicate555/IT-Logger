@@ -93,7 +93,7 @@ export const deleteLog = (id) => async (dispatch) => {
 const setCurrent = (log) => {
   return {
     type: SET_CURRENT,
-    payload,
+    payload: log,
   };
 };
 
