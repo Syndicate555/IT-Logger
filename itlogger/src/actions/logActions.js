@@ -4,6 +4,7 @@ import {
   LOGS_ERROR,
   ADD_LOG,
   DELETE_LOG,
+  SET_CURRENT,
 } from "./types";
 // export const getLogs = () => {
 //   return async (dispatch) => {
@@ -85,6 +86,15 @@ export const deleteLog = (id) => async (dispatch) => {
       payload: err.response.data,
     });
   }
+};
+
+// set current Log
+
+const setCurrent = (log) => {
+  return {
+    type: SET_CURRENT,
+    payload,
+  };
 };
 
 //set loading to true
