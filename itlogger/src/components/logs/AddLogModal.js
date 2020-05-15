@@ -19,6 +19,8 @@ const AddLogModal = ({ addLog }) => {
         tech,
         date: new Date(),
       };
+
+      addLog(newLog);
       // Clear Fields
       setMessage("");
       setTech("");
