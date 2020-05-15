@@ -51,6 +51,7 @@ const AddLogModal = () => {
               <option value="" disabled>
                 Select Technician
               </option>
+              {/* will fetch the technicians from the database later */}
               <option value="John Doe">John Doe</option>
               <option value="Sam Smith">Sam Smith</option>
               <option value="Sara Wilson">Sara Wilson</option>
