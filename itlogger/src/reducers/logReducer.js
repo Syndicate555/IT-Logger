@@ -1,4 +1,4 @@
-import { GET_LOGS, SET_LOADING, LOGS_ERROR } from "../actions/types";
+import { GET_LOGS, SET_LOADING, LOGS_ERROR, ADD_LOG } from "../actions/types";
 
 //App Level State
 const initalState = {
