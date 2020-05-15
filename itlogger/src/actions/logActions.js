@@ -34,7 +34,7 @@ export const getLogs = () => async (dispatch) => {
 };
 
 //Add new Log
-export const addLogs = (log) => async (dispatch) => {
+export const addLog = (log) => async (dispatch) => {
   try {
     setLoading();
 
