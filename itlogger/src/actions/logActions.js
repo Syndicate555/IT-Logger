@@ -97,6 +97,14 @@ export const setCurrent = (log) => {
   };
 };
 
+//clear current log
+export const setCurrent = (log) => {
+  return {
+    type: SET_CURRENT,
+    payload: log,
+  };
+};
+
 //set loading to true
 export const setLoading = () => {
   return {
