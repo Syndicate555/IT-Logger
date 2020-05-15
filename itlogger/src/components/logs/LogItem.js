@@ -5,6 +5,9 @@ import { connect } from "react-redux";
 import { deleteLog } from "../../actions/logActions";
 
 const LogItem = ({ log, deleteLog }) => {
+  const onDelete = () => {
+    deleteLog();
+  };
   return (
     <li className="collection-item">
       <div>
