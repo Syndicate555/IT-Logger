@@ -90,7 +90,7 @@ export const deleteLog = (id) => async (dispatch) => {
 
 // set current Log
 
-const setCurrent = (log) => {
+export const setCurrent = (log) => {
   return {
     type: SET_CURRENT,
     payload: log,
