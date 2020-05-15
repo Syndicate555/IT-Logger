@@ -30,6 +30,9 @@ const LogItem = ({ log, deleteLog }) => {
   );
 };
 
-LogItem.propTypes = { log: PropTypes.object.isRequired };
+LogItem.propTypes = {
+  log: PropTypes.object.isRequired,
+  deleteLog: PropTypes.func.isRequired,
+};
 
 export default LogItem;
