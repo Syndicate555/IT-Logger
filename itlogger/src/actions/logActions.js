@@ -91,12 +91,12 @@ export const deleteLog = (id) => async (dispatch) => {
 };
 
 // Update log on server
-export const updateLog = (id) => async (dispatch) => {
+export const updateLog = (log) => async (dispatch) => {
   try {
     setLoading();
 
     await fetch(`/logs/${id}`, {
-      method: "DELETE",
+      method: "PUT",
     });
 
     dispatch({
