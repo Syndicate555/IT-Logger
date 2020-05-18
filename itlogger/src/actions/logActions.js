@@ -95,7 +95,7 @@ export const updateLog = (log) => async (dispatch) => {
   try {
     setLoading();
 
-    await fetch(`/logs/${id}`, {
+    await fetch(`/logs/${log.id}`, {
       method: "PUT",
       body: JSON.stringify(log),
       headers: {
@@ -104,7 +104,7 @@ export const updateLog = (log) => async (dispatch) => {
     });
 
     dispatch({
-      type: DELETE_LOG,
+      type: UPDATE_LOG,
       payload: id,
     });
   } catch (err) {
