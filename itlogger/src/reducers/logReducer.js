@@ -38,6 +38,14 @@ export default (state = initalState, action) => {
         loading: false,
       };
 
+    case UPDATE_LOG:
+      return {
+        ...state,
+        logs: state.logs.map((log) =>
+          log.id === action.payload.id ? action.payload : log
+        ),
+      };
+
     case SET_CURRENT:
       return {
         ...state,
