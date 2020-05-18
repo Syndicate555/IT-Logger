@@ -1,5 +1,13 @@
 {
-  "logs": [],
+  "logs": [
+    {
+      "message": "Station 1 needs fixing",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-05-18T23:16:16.258Z",
+      "id": 1
+    }
+  ],
   "techs": [
     {
       "id": 1,
