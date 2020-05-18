@@ -43,6 +43,11 @@ export default (state = initalState, action) => {
         ...state,
         current: action.payload,
       };
+    case CLEAR_CURRENT:
+      return {
+        ...state,
+        current: action.payload,
+      };
 
     case SET_LOADING:
       return {
