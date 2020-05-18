@@ -18,6 +18,7 @@ const LogItem = ({ log, deleteLog, setCurrent }) => {
           className={`modal-trigger ${
             log.attention ? "red-text" : "blue-text"
           }`}
+          onClick={() => setCurrent(log)}
         >
           {log.message}
         </a>
