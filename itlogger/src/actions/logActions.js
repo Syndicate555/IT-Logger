@@ -90,6 +90,27 @@ export const deleteLog = (id) => async (dispatch) => {
   }
 };
 
+// Update log on server
+export const updateLog = (id) => async (dispatch) => {
+  try {
+    setLoading();
+
+    await fetch(`/logs/${id}`, {
+      method: "DELETE",
+    });
+
+    dispatch({
+      type: DELETE_LOG,
+      payload: id,
+    });
+  } catch (err) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: err.response.data,
+    });
+  }
+};
+
 // Set Current Log
 
 export const setCurrent = (log) => {
