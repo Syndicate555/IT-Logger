@@ -90,6 +90,8 @@ export const deleteLog = (id) => async (dispatch) => {
   }
 };
 
+// Set Current Log
+
 export const setCurrent = (log) => {
   return {
     type: SET_CURRENT,
