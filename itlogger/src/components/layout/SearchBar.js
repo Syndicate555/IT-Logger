@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { searchLogs } from "../../actions/logActions";
 
 const SearchBar = ({ searchLogs }) => {
+  const text = useRef("");
   return (
     <nav style={{ marginBottom: "30px" }} className="blue">
       <div className="nav-wrapper">
