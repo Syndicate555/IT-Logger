@@ -90,4 +90,4 @@ const modalStyle = {
   width: "75%",
   height: "75%",
 };
-export default EditLogModal;
+export default connect(mapStateToProps, { updateLog })(EditLogModal);
