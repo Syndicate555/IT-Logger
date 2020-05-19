@@ -5,10 +5,10 @@ import { addTech } from "../../actions/techActions";
 import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddTechModal = ({ addTech }) => {
-  //states
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const onsubmit = () => {
+
+  const onSubmit = () => {
     if (firstName === "" || lastName === "") {
       M.toast({ html: "Please enter the first and last name" });
     } else {
@@ -16,17 +16,19 @@ const AddTechModal = ({ addTech }) => {
         firstName,
         lastName,
       });
+
+      M.toast({ html: `${firstName} ${lastName} was added as a tech` });
+
       // Clear Fields
       setFirstName("");
       setLastName("");
     }
   };
+
   return (
     <div id="add-tech-modal" className="modal">
       <div className="modal-content">
-        <h4 style={{ fontFamily: "Jura", textAlign: "center" }}>
-          New Technician
-        </h4>
+        <h4>New Technician</h4>
         <div className="row">
           <div className="input-field">
             <input
@@ -46,7 +48,7 @@ const AddTechModal = ({ addTech }) => {
             <input
               type="text"
               name="lastName"
-              value={firstName}
+              value={lastName}
               onChange={(e) => setLastName(e.target.value)}
             />
             <label htmlFor="lastName" className="active">
@@ -58,8 +60,8 @@ const AddTechModal = ({ addTech }) => {
       <div className="modal-footer">
         <a
           href="#!"
-          onClick={onsubmit}
-          className="modal-close waves-effect blue wave-light btn"
+          onClick={onSubmit}
+          className="modal-close waves-effect blue waves-light btn"
         >
           Enter
         </a>
