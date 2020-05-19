@@ -5,9 +5,9 @@ import { searchLogs } from "../../actions/logActions";
 
 const SearchBar = ({ searchLogs }) => {
   const text = useRef("");
-  const onChange(() => {
-    
-  })
+  const onChange = (e) => {
+    searchLogs(text.current.value);
+  };
   return (
     <nav style={{ marginBottom: "30px" }} className="blue">
       <div className="nav-wrapper">
