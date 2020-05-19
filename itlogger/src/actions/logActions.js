@@ -118,11 +118,11 @@ export const updateLog = (log) => async (dispatch) => {
 };
 
 // Search logs
-export const searchLogs = () => async (dispatch) => {
+export const searchLogs = (text) => async (dispatch) => {
   try {
     setLoading();
 
-    const res = await fetch("/logs");
+    const res = await fetch(`/logs?q=${text}`);
     const data = await res.json();
 
     dispatch({
