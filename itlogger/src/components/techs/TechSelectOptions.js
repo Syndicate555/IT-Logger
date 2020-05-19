@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getTechs } from "../../actions/techActions";
 
-const TechSelectOptions = (props) => {
+const TechSelectOptions = ({ getTechs, tech: { techs, loading } }) => {
   return <div></div>;
 };
 
