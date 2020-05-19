@@ -7,6 +7,7 @@ import {
   UPDATE_LOG,
   SET_CURRENT,
   CLEAR_CURRENT,
+  SEARCH_LOGS,
 } from "../actions/types";
 
 //App Level State
