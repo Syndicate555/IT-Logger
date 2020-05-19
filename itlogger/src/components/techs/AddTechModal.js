@@ -65,4 +65,8 @@ const AddTechModal = ({ addTech }) => {
   );
 };
 
-export default connect()(AddTechModal);
+AddTechModal.propTypes = {
+  addTech: PropTypes.func.isRequired,
+};
+
+export default connect(null, { addTech })(AddTechModal);
