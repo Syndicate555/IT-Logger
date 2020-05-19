@@ -1,21 +1,19 @@
-import React, { useState, useEffect } from "react";
-import TechItem from "./TechItem";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import TechItem from "./TechItem";
 import { getTechs } from "../../actions/techActions";
 
 const TechListModal = ({ getTechs, tech: { techs, loading } }) => {
   useEffect(() => {
     getTechs();
-    //eslint-disable-next-line
+    // eslint-disable-next-line
   }, []);
 
   return (
     <div id="tech-list-modal" className="modal">
       <div className="modal-content">
-        <h4 style={{ fontFamily: "Jura", textAlign: "center" }}>
-          Technician Available
-        </h4>
+        <h4>Technician List</h4>
         <ul className="collection">
           {!loading &&
             techs !== null &&
