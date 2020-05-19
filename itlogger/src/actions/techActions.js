@@ -5,3 +5,5 @@ import {
   SET_LOADING,
   TECHS_ERROR,
 } from "./types";
+
+// Get techs from server
