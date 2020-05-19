@@ -90,4 +90,13 @@ const modalStyle = {
   width: "75%",
   height: "75%",
 };
+
+EditLogModal.propTypes = {
+  current: PropTypes.object,
+  updateLog: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  current: state.log.current,
+});
 export default connect(mapStateToProps, { updateLog })(EditLogModal);
