@@ -5,7 +5,7 @@
       "message": "Station 1 needs fixing",
       "attention": true,
       "tech": "Sam Smith",
-      "date": "2020-05-19T01:28:44.553Z"
+      "date": "2020-05-19T12:45:27.833Z"
     },
     {
       "message": "ewewewe",
@@ -15,26 +15,5 @@
       "id": 2
     }
   ],
-  "techs": [
-    {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe"
-    },
-    {
-      "id": 2,
-      "firstName": "Sam",
-      "lastName": "Smith"
-    },
-    {
-      "id": 3,
-      "firstName": "Sara",
-      "lastName": "Wilson"
-    },
-    {
-      "firstName": "Saffat",
-      "lastName": "azz",
-      "id": 4
-    }
-  ]
+  "techs": []
 }
