@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import TechItem from "./TechItem";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import { getTechs } from "../../actions/techActions";
 
 const TechListModal = () => {
   const [techs, setTechs] = useState([]);
