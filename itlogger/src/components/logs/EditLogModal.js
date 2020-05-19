@@ -16,7 +16,7 @@ const EditLogModal = ({ current, updateLog }) => {
       setAttention(current.attention);
       setTech(current.tech);
     }
-  });
+  }, [current]);
   const onsubmit = () => {
     if (message === "" || tech === "") {
       M.toast({ html: "Please enter a message and tech" });
