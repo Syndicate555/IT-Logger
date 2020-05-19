@@ -52,6 +52,7 @@ export const addTech = (tech) => async (dispatch) => {
   }
 };
 
+// delete tech from server
 export const deleteTech = (id) => async (dispatch) => {
   try {
     setLoading();
