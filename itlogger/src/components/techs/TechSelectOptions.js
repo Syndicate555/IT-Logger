@@ -9,4 +9,4 @@ const TechSelectOptions = ({ getTechs, tech: { techs, loading } }) => {
 
 TechSelectOptions.propTypes = {};
 
-export default TechSelectOptions;
+export default connect(mapStateToProps, { getTechs })(TechSelectOptions);
