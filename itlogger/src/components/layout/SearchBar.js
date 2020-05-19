@@ -20,4 +20,4 @@ const SearchBar = ({ searchLogs }) => {
     </nav>
   );
 };
-export default SearchBar;
+export default connect(null, { searchLogs })(SearchBar);
