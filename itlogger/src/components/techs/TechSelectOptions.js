@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getTechs } from "../../actions/techActions";
 
 const TechSelectOptions = ({ getTechs, tech: { techs, loading } }) => {
+  useEffect(() => {
+    getTechs();
+    //eslint-disable-next-line
+  }, []);
   return <div></div>;
 };
 
