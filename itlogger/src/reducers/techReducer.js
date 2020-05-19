@@ -24,6 +24,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         techs: [...state.techs, action.payload],
+        loading: false,
       };
     case TECHS_ERROR:
       console.error(action.payload);
