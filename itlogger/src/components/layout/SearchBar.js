@@ -10,7 +10,7 @@ const SearchBar = ({ searchLogs }) => {
       <div className="nav-wrapper">
         <form>
           <div className="input-field">
-            <input id="search" type="search" />
+            <input id="search" type="search" placeholder="Search Logs......" />
             <label className="label-icon" htmlFor="search">
               <i className="material-icons">search</i>
             </label>
