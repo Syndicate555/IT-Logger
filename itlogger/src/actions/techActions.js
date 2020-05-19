@@ -52,7 +52,7 @@ export const addTech = (tech) => async (dispatch) => {
   }
 };
 
-export const getTechs = () => async (dispatch) => {
+export const deleteTechs = () => async (dispatch) => {
   try {
     setLoading();
 
