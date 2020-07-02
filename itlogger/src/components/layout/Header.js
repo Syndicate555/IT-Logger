@@ -8,7 +8,6 @@ const Header = () => {
         width: "400px",
         height: "260px",
         textAlign: "center",
-
         display: "column",
       }}
       src={Logo}

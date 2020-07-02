@@ -40,11 +40,7 @@ const App = () => {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+
       <Footer />
     </div>
   );
