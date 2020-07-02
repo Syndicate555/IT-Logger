@@ -21,10 +21,7 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
     <div>
       <ul className="collection with-header">
         <li className="collection-header">
-          <h4
-            className="center"
-            style={{ fontFamily: "Jura", textAlign: "center" }}
-          >
+          <h4 className="center" style={{ fontFamily: "Verdana" }}>
             System Logs
           </h4>
         </li>
