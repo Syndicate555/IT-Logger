@@ -9,7 +9,7 @@ const SearchBar = ({ searchLogs }) => {
     searchLogs(text.current.value);
   };
   return (
-    <nav style={{ marginBottom: "30px" }} className="blue">
+    <nav style={{ marginBottom: "30px" }} className="black">
       <div className="nav-wrapper">
         <form>
           <div className="input-field">
