@@ -5,20 +5,19 @@ import {
   ADD_LOG,
   DELETE_LOG,
   UPDATE_LOG,
+  SEARCH_LOGS,
   SET_CURRENT,
   CLEAR_CURRENT,
-  SEARCH_LOGS,
 } from "../actions/types";
 
-//App Level State
-const initalState = {
+const initialState = {
   logs: null,
   current: null,
   loading: false,
   error: null,
 };
 
-export default (state = initalState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case GET_LOGS:
       return {
@@ -38,7 +37,6 @@ export default (state = initalState, action) => {
         logs: state.logs.filter((log) => log.id !== action.payload),
         loading: false,
       };
-
     case UPDATE_LOG:
       return {
         ...state,
@@ -51,19 +49,16 @@ export default (state = initalState, action) => {
         ...state,
         logs: action.payload,
       };
-
     case SET_CURRENT:
       return {
         ...state,
         current: action.payload,
       };
-
     case CLEAR_CURRENT:
       return {
         ...state,
         current: null,
       };
-
     case SET_LOADING:
       return {
         ...state,

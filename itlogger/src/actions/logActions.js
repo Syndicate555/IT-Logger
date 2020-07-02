@@ -4,26 +4,27 @@ import {
   LOGS_ERROR,
   ADD_LOG,
   DELETE_LOG,
-  SET_CURRENT,
-  CLEAR_CURRENT,
   UPDATE_LOG,
   SEARCH_LOGS,
+  SET_CURRENT,
+  CLEAR_CURRENT,
 } from "./types";
+
 // export const getLogs = () => {
-//   return async (dispatch) => {
+//   return async dispatch => {
 //     setLoading();
 
-//     const res = await fetch("/logs");
+//     const res = await fetch('/logs');
 //     const data = await res.json();
 
 //     dispatch({
 //       type: GET_LOGS,
-//       payload: data,
+//       payload: data
 //     });
 //   };
 // };
 
-// Get Logs from server
+// Get logs from server
 export const getLogs = () => async (dispatch) => {
   try {
     setLoading();
@@ -43,7 +44,7 @@ export const getLogs = () => async (dispatch) => {
   }
 };
 
-//Add new Log
+// Add new log
 export const addLog = (log) => async (dispatch) => {
   try {
     setLoading();
@@ -69,8 +70,7 @@ export const addLog = (log) => async (dispatch) => {
   }
 };
 
-//Delete log from server
-
+// Delete log from server
 export const deleteLog = (id) => async (dispatch) => {
   try {
     setLoading();
@@ -118,7 +118,7 @@ export const updateLog = (log) => async (dispatch) => {
   }
 };
 
-// Search logs
+// Search server logs
 export const searchLogs = (text) => async (dispatch) => {
   try {
     setLoading();
@@ -138,8 +138,7 @@ export const searchLogs = (text) => async (dispatch) => {
   }
 };
 
-// Set Current Log
-
+// Set current log
 export const setCurrent = (log) => {
   return {
     type: SET_CURRENT,
@@ -147,14 +146,14 @@ export const setCurrent = (log) => {
   };
 };
 
-//clear current log
+// Clear current log
 export const clearCurrent = () => {
   return {
     type: CLEAR_CURRENT,
   };
 };
 
-//set loading to true
+// Set loading to true
 export const setLoading = () => {
   return {
     type: SET_LOADING,
