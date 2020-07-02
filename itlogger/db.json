@@ -8,5 +8,31 @@
       "date": "2020-05-19T12:45:27.833Z"
     }
   ],
-  "techs": []
+  "techs": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "id": 1
+    },
+    {
+      "firstName": "Jim ",
+      "lastName": "Halpert",
+      "id": 2
+    },
+    {
+      "firstName": "Dwight ",
+      "lastName": "Schrute",
+      "id": 3
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Scott",
+      "id": 4
+    },
+    {
+      "firstName": "Kevin ",
+      "lastName": "Malone",
+      "id": 5
+    }
+  ]
 }

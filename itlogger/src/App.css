@@ -1,0 +1,7 @@
+.container-div {
+  display: flex;
+  height: 260px;
+  width: 400px;
+  align-items: center;
+  justify-content: centre;
+}

@@ -1,15 +1,15 @@
 import React from "react";
-import Logo from "../../assets/default.png";
+import Logo from "../../assets/default1.png";
 
 const Header = () => {
   return (
     <img
       style={{
         width: "400px",
-        height: "60px",
+        height: "260px",
         textAlign: "center",
-        paddingTop: "20px",
-        paddingRight: "20px",
+
+        display: "column",
       }}
       src={Logo}
       alt=""

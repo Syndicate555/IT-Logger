@@ -6,10 +6,13 @@ import AddLogModal from "./components/logs/AddLogModal";
 import EditLogModal from "./components/logs/EditLogModal";
 import AddTechModal from "./components/techs/AddTechModal";
 import TechListModal from "./components/techs/TechListModal";
+import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
 import { Provider } from "react-redux";
 import store from "./store";
 import "./App.css";
 import "materialize-css/dist/css/materialize.min.css";
+import Logo from "./assets/default1.png";
 import M from "materialize-css/dist/js/materialize.min.js";
 const App = () => {
   useEffect(() => {
@@ -17,19 +20,33 @@ const App = () => {
     M.AutoInit();
   });
   return (
-    <Provider store={store}>
-      <Fragment>
-        <SearchBar />
-        <div className="container">
+    <div className="container">
+      <Header />
+      <br></br>
+
+      <Provider store={store}>
+        <Fragment>
+          <SearchBar />
           <AddBtn />
           <AddLogModal />
           <EditLogModal />
           <AddTechModal />
           <TechListModal />
           <Logs />
-        </div>
-      </Fragment>
-    </Provider>
+        </Fragment>
+      </Provider>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer />
+    </div>
   );
 };
 
